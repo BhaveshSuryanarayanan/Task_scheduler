@@ -98,28 +98,28 @@ Both are taken care by `add_process` function in `Schedule` class. Polymorphism 
 
 ## Scheduling Algorithms
 
-#### 1. FCFS 
+### 1. FCFS 
 - threads are run in the order they arrive (arrival time)
 - Non preemptive
 - disadvantage: it can result in long waiting times if a long process arrrives before a shorter one (convoy effect) 
   
-#### 2. Short Job FIrst (SJF) scheduling
+### 2. Short Job FIrst (SJF) scheduling
 - process with smallest waiting time is executed first
 - it gives the minimum average waiting time overall
 - but it could lead to **starvation** if shorter processes keep coming 
   
-#### 3. Shortest remaining time first(STRF) scheduling
+### 3. Shortest remaining time first(STRF) scheduling
 - same as sjf but preemptive
 - advantages and disadvantages are the same
 
 
-#### 4. Round Robin Scheduling
+### 4. Round Robin Scheduling
 - The system rotates through all the processes allocating each of them a fixed time slice or quantum, regardless of their priority.
 - after every quantum, if the process is completed then it is removed from the queue else it goes to the back of the queue.
 - disadvantage : high overhead due to switching
 
 
-#### 5. Priority Scheduling
+### 5. Priority Scheduling
 - Each process is assigned a priority based on criteria such as memory requirment, time requirement, burst time, I/O, etc.
 - highest priority task is executed first
 - if tasks have same priority, then fcfs is followed
